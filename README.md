@@ -55,7 +55,7 @@ from Evaluator.DicomCodeStandardEvaluator import DicomCodeStandardEvaluator
 
 evaluator = DicomCodeStandardEvaluator(df_metadata, df_standard)
 rates_df, stats_df = evaluator.analyze_rates_with_stats(
-    group_cols=['IOD', 'Manufacturer']
+    group_cols=['IOD', 'study_id']
 )
 ```
 
